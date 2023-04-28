@@ -1,3 +1,4 @@
+
 $(function () {
     $('.header__btn').on('click', function() {
         $('.rightside-menu').removeClass('rightside-menu--close')
@@ -13,4 +14,10 @@ $(function () {
         fade: true,
         autoplay: true
     })
-})
+
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: ".bedroom"
+        }
+    });
+}) 
